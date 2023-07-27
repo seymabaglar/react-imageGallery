@@ -7,12 +7,21 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: rgb(25, 88, 157);
+  background: linear-gradient(
+    90deg,
+    rgba(25, 88, 157, 0.7708333333333334) 16%,
+    rgba(82, 82, 198, 0.7932422969187676) 30%,
+    rgba(133, 97, 223, 0.7820378151260504) 51%,
+    rgba(82, 82, 198, 0.7932422969187676) 70%,
+    rgba(25, 88, 157, 0.756827731092437) 83%
+  );
 }
 
 h1 {
   margin: 10px;
   text-align: center;
-  color: blue;
+  color: rgb(92, 10, 58);
 }
 .home {
   display: flex;
@@ -26,6 +35,7 @@ h1 {
   width: 300px;
   padding: 16px;
   display: inline-block;
+  
 }
 .picture img {
   width: 100%;
@@ -34,17 +44,20 @@ h1 {
   object-fit: cover;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
 .par {
-  color: #4682b4;
+  color: #642835;
 }
 .imageContainer {
   overflow: hidden;
   height: 40vh;
+  border-radius: 8px;
 }
 .picture img:hover {
   -webkit-transform: scale(1.25);
   transform: scale(1.25);
+  border-radius: 8px;
 }
 .info {
   display: -webkit-box;
